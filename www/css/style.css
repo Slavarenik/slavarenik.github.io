@@ -1,0 +1,269 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 100px auto;
+  box-sizing: border-box;
+}
+.sale {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  border: 5px solid #ffc000;
+  border-radius: 5px;
+}
+.sale p.title {
+  position: absolute;
+  display: inline-block;
+  padding: 0 50px;
+  background-color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  color: #dd1417;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translatex(-50%);
+  top: -65px;
+}
+.sale .show-all {
+  display: inline-block;
+  padding: 0 15px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -40px;
+}
+.sale .show-all .btn {
+  display: flex;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #cb0003;
+  text-decoration: none;
+}
+.sale .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px 20px 45px 20px;
+  box-sizing: border-box;
+}
+.sale .hidden-list {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+}
+.sale .item {
+  width: calc(25% - 10px);
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 5px;
+  position: relative;
+}
+.sale .item.super {
+  border-color: #dd1417;
+}
+.sale .item .super-tag {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #dd1417;
+  align-items: center;
+}
+.sale .item .image img {
+  max-width: 100%;
+}
+.sale .item .info {
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.sale .item .info p {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+.sale .item .info p.art {
+  font-size: 12px;
+  font-weight: 300;
+  color: #acacac;
+}
+.sale .item .info p.name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.sale .item .payment-info {
+  width: 100%;
+}
+.sale .item .payment-info .price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sale .item .payment-info .price span.old {
+  font-size: 16px;
+  color: #5b5b5b;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+}
+.sale .item .payment-info .price span.old:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(228, 67, 69, 0.8);
+}
+.sale .item .payment-info .price span.new {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+.sale .item .payment-info .price span.discount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffc000;
+  border-radius: 5px;
+  height: 36px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sale .item .payment-info .price span.discount.yellow {
+  background-color: #ffc000;
+}
+.sale .item .payment-info .price span.discount.orange {
+  background-color: #f98700;
+}
+.sale .item .payment-info .price span.discount.red {
+  background-color: #dd1417;
+}
+.sale .item .payment-info .buy {
+  display: flex;
+  justify-content: space-between;
+}
+.sale .item .payment-info .buy .count {
+  position: relative;
+}
+.sale .item .payment-info .buy input[type=number] {
+  height: 36px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 0 15px;
+  border: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  width: 60px;
+  box-sizing: border-box;
+  -moz-appearance: textfield;
+  pointer-events: none;
+}
+.sale .item .payment-info .buy input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sale .item .payment-info .buy input[type=number]:focus {
+  outline: none;
+  box-shadow: none;
+}
+.sale .item .payment-info .buy span {
+  display: inline-block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2px solid #3b3b3b;
+  border-left: 2px solid #3b3b3b;
+  text-decoration: none;
+  color: transparent;
+  cursor: pointer;
+}
+.sale .item .payment-info .buy span:before {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+.sale .item .payment-info .buy span.up {
+  transform: rotate(45deg);
+  right: 10px;
+  top: 10px;
+}
+.sale .item .payment-info .buy span.down {
+  transform: rotate(-135deg);
+  right: 10px;
+  top: 20px;
+}
+.sale .item .payment-info .buy .btn {
+  height: 36px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dd1417;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #dd1417;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@media all and (max-width: 1180px) {
+  .sale .item-list .item {
+    width: calc(33.33% - 10px);
+  }
+}
+@media all and (max-width: 900px) {
+  .sale .item-list .item {
+    width: calc(50% - 10px);
+  }
+}
+@media all and (max-width: 640px) {
+  .sale p.title {
+    font-size: 24px;
+    top: -45px;
+    padding: 0 20px;
+  }
+  .sale .item-list {
+    padding: 30px 10px 45px 10px;
+  }
+  .sale .item-list .item {
+    width: calc(100% - 10px);
+    padding: 18px;
+  }
+  .sale .show-all {
+    padding: 0 7px;
+  }
+  .sale .show-all .btn {
+    white-space: nowrap;
+  }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
