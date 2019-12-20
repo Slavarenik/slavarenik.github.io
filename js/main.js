@@ -1,11 +1,6 @@
 $(document).ready(function(){
     let count = 1
 
-    $('.show-all .btn').on('click', function(e){
-        e.preventDefault();
-        $('.hidden-list').css('display', 'flex').show()
-    })
-
     $('.item .up').on('click', function(){
         changeInputVal($(this), 'increment')
     })

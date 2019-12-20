@@ -43,7 +43,13 @@
   font-size: 14px;
   color: #fff;
   background-color: #cb0003;
+  border: 1px solid transparent;
   text-decoration: none;
+}
+.sale .show-all .btn:hover {
+  border: 1px solid #cb0003;
+  background-color: #fff;
+  color: #cb0003;
 }
 .sale .item-list {
   display: flex;
@@ -243,6 +249,10 @@
   color: #dd1417;
   box-sizing: border-box;
   text-decoration: none;
+}
+.sale .item .payment-info .buy .btn:hover {
+  background-color: #dd1417;
+  color: #fff;
 }
 @media all and (max-width: 1180px) {
   .sale .item-list .item {
