@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let count = $('.count input[type=number]').val()
+    let count = 1
 
     $('.show-all .btn').on('click', function(e){
         e.preventDefault();

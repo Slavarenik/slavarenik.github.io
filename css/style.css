@@ -70,6 +70,9 @@
   margin: 5px;
   position: relative;
 }
+.sale .item:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
 .sale .item.super {
   border-color: #dd1417;
 }
@@ -109,6 +112,12 @@
 .sale .item .info p.name {
   font-size: 14px;
   font-weight: bold;
+}
+.sale .item .info p.name a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
 }
 .sale .item .payment-info {
   width: 100%;
