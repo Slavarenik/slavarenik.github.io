@@ -3,4 +3,6 @@ $(document).ready(() => {
         $(this).toggleClass('close')
         $('header').toggleClass('active')
     })
+
+    $('video').play();
 })
