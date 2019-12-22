@@ -5,243 +5,207 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Luceo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-<div class="container">
-    <div class="sale">
-        <p class="title">Распродажа</p>
+<div class="main">
 
-        <div class="item-list">
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
-                    
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li class="menu-btn"><a href="#" class="btn">Get Started</a></li>
+                </ul>
+            </div>
 
-                        <a href="#" class="btn">В корзину</a>
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="first-block">
+        <div class="container">
+            <div class="text">
+                <h1>People-first analytics for an omni-channel world</h1>
+                <p>Get a deeper understanding of where and how people interact with your business across your website, app, Facebook Page, and more. Then, optimize and grow.</p>
+                <p><a href="#" class="btn">Get Started</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-block" >
+        <video poster="images/video-placeholder.jpg" autoplay loop>
+            <source src="images/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+    </div>
+
+    <div class="content-block">
+        <div class="container">
+            <div class="text">
+                <p>Omni-channel</p>
+                <h3>What are the channels that matter most to your business?</h3>
+                <p>People come to your business on different channels using multiple devices. When your analytics go beyond last click and sessions, it’s easier to make smarter strategic decisions.</p>
+            </div>
+
+            <div class="image">
+                <img src="images/ommi-chennel-img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="info-block">
+        <div class="container">
+            <p class="red">The Facebook difference</p>
+            <h2>The only analytics tool built on insights from Facebook’s 2 billion person community.</h2>
+        </div>
+    </div>
+
+    <div class="content-block blue">
+        <div class="container">
+            <div class="image">
+                <img src="images/people-img.png" alt="">
+            </div>
+
+            <div class="text">
+                <p>People-first analytics</p>
+                <h3>Get to know the people who care about your business.</h3>
+                <p>Aggregated, anonymous data gives you a more complete picture of the people interested in and already using your business.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-block">
+        <div class="container">
+            <p>Success stories</p>
+            <h2>How do businesses grow with Facebook Analytics?</h2>
+
+            <div class="items">
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/success-ico1.png" alt="">
                     </div>
+                    <p>Musical.ly used demographics to create and engage a new target group of users.</p>
+                </div>
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/success-ico2.jpg" alt="">
+                    </div>
+                    <p>MusixMatch drove richer targeting with segments to improve retention.</p>
+                </div>
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/success-ico3.jpg" alt="">
+                    </div>
+                    <p>TinyCo used percentiles to identify top customers.</p>
                 </div>
             </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
+            <p><a href="#" class="btn">More Success Stories</a></p>
+        </div>
+    </div>
 
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
+    <div class="content-block">
+        <div class="container">
+            <div class="text">
+                <h3>Get started with Facebook Analytics</h3>
+                <p>Understand your complete customer journey across channels—from your website to your Facebook Page.</p>
+                <p><a href="#" class="btn">Get Started</a></p>
             </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
+            <div class="image">
+                <img src="images/get-started-img.png" alt="">
             </div>
-            <div class="item super">
-                <div class="super-tag">суперскидка</div>
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount red">-30%</span>
-                    </div>
+        </div>
+    </div>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
+    <footer>
+        <div class="pre-footer">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Funnels</a></li>
+                    <li><a href="#">Cohorts</a></li>
+                    <li><a href="#">Retention</a></li>
+                    <li><a href="#">Revenue</a></li>
+                    <li><a href="#">Lifetime Value</a></li>
+                    <li><a href="#">Automated Insights</a></li>
+                    <li><a href="#">Custom Dashboards</a></li>
+                </ul>
 
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
+                <ul>
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Facebook Analytics for iOS</a></li>
+                    <li><a href="#">Facebook Analytics for Android</a></li>
+                </ul>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
+                <ul>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Report Bug</a></li>
+                </ul>
 
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item super">
-                <div class="super-tag">суперскидка</div>
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount red">-30%</span>
-                    </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
+                <ul>
+                    <li><a href="#">Facebook for Developers Group</a></li>
+                    <li><a href="#">Facebook Analytics Page</a></li>
+                    <li><a href="#">Facebook Analytics Twitter</a></li>
+                    <li><a href="#" class="btn border white">Try the Demo</a></li>
+                </ul>
             </div>
         </div>
 
-        <p class="show-all">
-            <a href="#" class="btn">Показать остальные</a>
-        </p>
-    </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="apps">
+                    <ul>
+                        <li><a href="#" class="app-store"></a></li>
+                        <li><a href="#" class="google-play"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-end">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li>Facebook © 2019</li>
+                    </ul>
+
+                    <a href="#" class="btn border blue">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </div>
 
 </body>
