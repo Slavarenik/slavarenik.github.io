@@ -5,243 +5,379 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Ecos</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="container">
-    <div class="sale">
-        <p class="title">Распродажа</p>
+<div class="main">
 
-        <div class="item-list">
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
-                    
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
 
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
+            <div class="lang">
+                <div class="lang-wrap">
+                    <img src="images/flag.png" alt="">
+                    <p>Eng</p>
                 </div>
             </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
-                    </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
-                </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Главная <span>Стартовая</span></a></li>
+                    <li><a href="#">О компании <span>подробности</span></a></li>
+                    <li><a href="#">Партнерам <span>предложение</span></a></li>
+                    <li><a href="#">Новости <span>события</span></a></li>
+                    <li><a href="#">Правила <span>соглашение</span></a></li>
+                    <li><a href="#">FAQ <span>ответы</span></a></li>
+                    <li><a href="#">Контакты <span>связь</span></a></li>
+                </ul>
             </div>
-            <div class="item super">
-                <div class="super-tag">суперскидка</div>
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount red">-30%</span>
-                    </div>
+        </div>
+    </header>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
+    <div class="header-block">
+        <div class="container">
+            <div class="text-block">
+                <h1>Инвестиции в наше зеленое будущее </h1>
+                <p class="text">На сегодняшний день создание екологически чистой енергии
+                    является одним из основных направленийведущих
+                    государств, аоскольку это очень важно для нашей планеты.
+                    Наша компания помагает сделать среду обитания более чистой
+                    для каждогосущества которое обитает на планете земля</p>
+                <p><a href="#" class="btn yellow">вход в кабинет</a></p>
+                <p><a href="#" class="btn green">регистрация</a></p>
+                <ul class="soc">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-                        <a href="#" class="btn">В корзину</a>
+    <div class="cards-block">
+        <div class="container">
+            <div class="item">
+                <div class="item-top">
+                    <div class="ico">
+                        <img src="images/card-img1.jpg" alt="">
                     </div>
+                    <p>0.6 <sup>%</sup></p>
+                    <span>ежедневно</span>
                 </div>
+                <div class="days">на 15 дней</div>
+                <div class="desc">
+                    <table>
+                        <tr>
+                            <td>мин. депозит</td>
+                            <td>макс. депозит</td>
+                        </tr>
+                        <tr>
+                            <td>$25</td>
+                            <td>не ограничен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">начисления в рабочие дни</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">возврат тела в конце срока</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="item-btn">калькулятор прибыли</a>
             </div>
             <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
+                <div class="item-top">
+                    <div class="ico">
+                        <img src="images/card-img2.jpg" alt="">
                     </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
+                    <p>0.6 <sup>%</sup></p>
+                    <span>ежедневно</span>
                 </div>
+                <div class="days">на 15 дней</div>
+                <div class="desc">
+                    <table>
+                        <tr>
+                            <td>мин. депозит</td>
+                            <td>макс. депозит</td>
+                        </tr>
+                        <tr>
+                            <td>$25</td>
+                            <td>не ограничен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">начисления в рабочие дни</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">возврат тела в конце срока</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="item-btn">калькулятор прибыли</a>
             </div>
             <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
+                <div class="item-top">
+                    <div class="ico">
+                        <img src="images/card-img3.jpg" alt="">
                     </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
+                    <p>0.6 <sup>%</sup></p>
+                    <span>ежедневно</span>
                 </div>
+                <div class="days">на 15 дней</div>
+                <div class="desc">
+                    <table>
+                        <tr>
+                            <td>мин. депозит</td>
+                            <td>макс. депозит</td>
+                        </tr>
+                        <tr>
+                            <td>$25</td>
+                            <td>не ограничен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">начисления в рабочие дни</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">возврат тела в конце срока</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="item-btn">калькулятор прибыли</a>
             </div>
             <div class="item">
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
-                </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
-                </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount yellow">-10%</span>
+                <div class="item-top">
+                    <div class="ico">
+                        <img src="images/card-img4.jpg" alt="">
                     </div>
-
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
-                        </div>
-
-                        <a href="#" class="btn">В корзину</a>
-                    </div>
+                    <p>0.6 <sup>%</sup></p>
+                    <span>ежедневно</span>
                 </div>
+                <div class="days">на 15 дней</div>
+                <div class="desc">
+                    <table>
+                        <tr>
+                            <td>мин. депозит</td>
+                            <td>макс. депозит</td>
+                        </tr>
+                        <tr>
+                            <td>$25</td>
+                            <td>не ограничен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">начисления в рабочие дни</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">возврат тела в конце срока</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="item-btn">калькулятор прибыли</a>
             </div>
-            <div class="item super">
-                <div class="super-tag">суперскидка</div>
-                <div class="image">
-                    <a href="#"><img src="images/item-img.jpg" alt=""></a>
+            <div class="item">
+                <div class="item-top">
+                    <div class="ico">
+                        <img src="images/card-img5.jpg" alt="">
+                    </div>
+                    <p>0.6 <sup>%</sup></p>
+                    <span>ежедневно</span>
                 </div>
-                <div class="info">
-                    <p class="art">Артикул: СМ15</p>
-                    <p class="name"><a href="#">Стол компьютерный</a></p>
-                    <p class="size">904х704х756</p>
+                <div class="days">на 15 дней</div>
+                <div class="desc">
+                    <table>
+                        <tr>
+                            <td>мин. депозит</td>
+                            <td>макс. депозит</td>
+                        </tr>
+                        <tr>
+                            <td>$25</td>
+                            <td>не ограничен</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">начисления в рабочие дни</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">возврат тела в конце срока</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="payment-info">
-                    <div class="price">
-                        <span class="old">1 757 ₽</span>
-                        <span class="new">1 953 ₽</span>
-                        <span class="discount red">-30%</span>
+                <a href="#" class="item-btn">калькулятор прибыли</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-block">
+        <div class="container">
+            <div class="text">
+                <h2>о компании ecos energy ltd</h2>
+                <p>Цели были самой первой программой взаимного финансирования, которую предложила своим участникам СуперКопилка. И до сих пор Цели остаются самой популярной программой в Сообществе.</p>
+                <p>Она лучше всего подойдет тем, кто не имеет возможности откладывать сразу много денег, поскольку взносы по Целям делаются небольшими суммами один раз в неделю на протяжении всего срока работы программы. Этот срок участник определяет самостоятельно. Доходность Цели зависит от того сколько недель она будет находиться в работе, поскольку процентная ставка каждой последующей недели больше предыдущей.</p>
+                <p>Она лучше всего подойдет тем, кто не имеет возможности откладывать сразу много денег, поскольку взносы по Целям делаются небольшими суммами один раз в неделю на протяжении всего срока работы программы. Этот срок участник определяет самостоятельно. Доходность Цели зависит от того сколько недель она будет находиться в работе, поскольку процентная ставка каждой последующей недели больше предыдущей.</p>
+            </div>
+            <div class="image">
+                <img src="images/about-img.jpg" alt="">
+            </div>
+
+            <a href="#" class="learn-more">Узнать больше</a>
+        </div>
+    </div>
+
+    <div class="video-block">
+        <div class="container">
+            <div class="video block">
+                <h3>Промо ролик от ecos Energy ltd</h3>
+                <img src="images/video-img.jpg" alt="">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zvWSlBDX2O4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Лучше всего подойдет тем, кто не имеет возможности откладывать сразу много денег, поскольку взносы по Целям делаются небольшими суммами один раз в неделю на протяжении всего срока работы программы. Этот срок участник определяет самостоятельно.</p>
+            </div>
+
+            <div class="certificate block">
+                <h3>мы официальная компания</h3>
+                <div class="certificate-wrap">
+                    <div class="image">
+                        <img src="images/certificate.jpg" alt="">
                     </div>
 
-                    <div class="buy">
-                        <div class="count">
-                            <span class="up"></span>
-                            <input type="number" value="1">
-                            <span class="down"></span>
+                    <div class="desc">
+                        <div class="text">
+                            <p>Название: <span>Ecos energy ltd</span></p>
+                            <p>Номер регистрации: <span>23145334</span></p>
+                            <p>Адрес:  <span>12 Clanricarde Gardens, London, England, W2 4NA</span></p>
+                            <p>номер: <span>+476-22-33</span></p>
+                            <p>E-mail: <span>support@ecos-energy.cc</span></p>
                         </div>
 
-                        <a href="#" class="btn">В корзину</a>
+                        <div class="btn-block">
+                            <a href="#" class="btn yellow">Документация компании</a>
+                            <a href="#" class="btn green">проверить компанию</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <p class="show-all">
-            <a href="#" class="btn">Показать остальные</a>
-        </p>
     </div>
+
+    <div class="partners-block">
+        <div class="container">
+            <div class="partners">
+                <div class="desc">
+                    <h2>партнерская программа от ecos energy ltd</h2>
+
+                    <div class="item">
+                        <div class="percent">
+                            <p>5%</p>
+                        </div>
+
+                        <div class="text">
+                            <p class="title">первый уровень</p>
+                            <p><span>от прибыли вашего реферала</span></p>
+                        </div>
+                    </div>
+
+                    <div class="item green">
+                        <div class="percent">
+                            <p>2%</p>
+                        </div>
+
+                        <div class="text">
+                            <p class="title">Второй уровень</p>
+                            <p><span>от прибыли вашего реферала</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="images/partners-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits-block">
+        <div class="container">
+            <div class="left-block">
+                <h2>Преимущества работы з нами</h2>
+                <ul>
+                    <li>Надежная защита ваших депозитов </li>
+                    <li>Ручные выплаты в течении 24 часов</li>
+                    <li>Перспектива развития отрасли енергии</li>
+                    <li>Начисление прибыли ежедневно</li>
+                </ul>
+            </div>
+
+            <div class="right-block">
+                <div class="graph"><img src="images/pie-img.png" alt=""></div>
+                <h3>Cтатистика компании</h3>
+                <ul>
+                    <li>
+                        <p>Инвестировано</p>
+                        <p class="price">$18586.87</p>
+                    </li>
+                    <li>
+                        <p>выплаченая прибыль</p>
+                        <p class="price">$13565.22</p>
+                    </li>
+                    <li>
+                        <p>Всего инвесторов</p>
+                        <p class="price">2375 чел.</p>
+                    </li>
+                    <li>
+                        <p>Страховой фонд</p>
+                        <p class="price">$5565.22</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-block">
+        <div class="container">
+            <img src="images/payments.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/footer-logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <p class="copy">Copyright © 2019-2020 Ecos-Energy.cc All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </div>
 
 </body>
