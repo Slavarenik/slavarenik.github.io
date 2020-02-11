@@ -5,380 +5,175 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ecos</title>
+    <title>Comfur</title>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontawesome.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
 <div class="main">
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="images/logo.png" alt=""></a>
-            </div>
+    <div class="cursor"></div>
+    <div class="cursor-point"></div>
 
-            <div class="lang">
-                <div class="lang-wrap">
-                    <img src="images/flag.png" alt="">
-                    <p>Eng</p>
-                </div>
-            </div>
+    <!--  Main menu  -->
+    <div class="main-menu">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="#services">Услуги и цены</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#main">Главная</a></li>
+        </ul>
+    </div>
 
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div id="main">
+        <div class="block main-block">
+            <p class="sup-header">Компания</p>
+            <h1><span>Commercial Furniture</span></h1>
+            <p class="sub-header">Мебель для Вашего бизнеса</p>
             
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Главная <span>Стартовая</span></a></li>
-                    <li><a href="#">О компании <span>подробности</span></a></li>
-                    <li><a href="#">Партнерам <span>предложение</span></a></li>
-                    <li><a href="#">Новости <span>события</span></a></li>
-                    <li><a href="#">Правила <span>соглашение</span></a></li>
-                    <li><a href="#">FAQ <span>ответы</span></a></li>
-                    <li><a href="#">Контакты <span>связь</span></a></li>
-                </ul>
+            <div class="arrows"><img src="images/main-arrows.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="block portfolio-block">
+            <div class="item active">
+                <img src="images/portfolio-img.jpg" alt="">
+
+                <div class="desc">
+                    <p class="title">Торговые островки, витрины</p>
+                    <p class="text">Модуль, который имеет в своем составе витрину и прилавок. Такой островок может быть установлен в любом месте, благодаря своей компактности. По сути, это отдельные торговые точки, располагающиеся на территории больших торговых центров, супермаркетов, развлекательных центров. Такие островки являются очень эффективным видом розничной торговли.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/portfolio-img2.jpg" alt="">
+
+                <div class="desc">
+                    <p class="title">Торгово-выставочное оборудование,<br/> презентационные стенды</p>
+                    <p class="text">Модуль, который имеет в своем составе витрину и прилавок. Такой островок может быть установлен в любом месте, благодаря своей компактности. По сути, это отдельные торговые точки, располагающиеся на территории больших торговых центров, супермаркетов, развлекательных центров. Такие островки являются очень эффективным видом розничной торговли.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/portfolio-img3.jpg" alt="">
+
+                <div class="desc">
+                    <p class="title">Офисная и коммерческая мебельная<br/> продукция</p>
+                    <p class="text">Модуль, который имеет в своем составе витрину и прилавок. Такой островок может быть установлен в любом месте, благодаря своей компактности. По сути, это отдельные торговые точки, располагающиеся на территории больших торговых центров, супермаркетов, развлекательных центров. Такие островки являются очень эффективным видом розничной торговли.</p>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <div class="header-block">
-        <div class="container">
+    <div id="about">
+        <div class="block about-block">
             <div class="text-block">
-                <h1>Инвестиции в наше зеленое будущее </h1>
-                <p class="text">На сегодняшний день создание екологически чистой енергии
-                    является одним из основных направленийведущих
-                    государств, аоскольку это очень важно для нашей планеты.
-                    Наша компания помагает сделать среду обитания более чистой
-                    для каждогосущества которое обитает на планете земля</p>
-                <p><a href="#" class="btn yellow">вход в кабинет</a></p>
-                <p><a href="#" class="btn green">регистрация</a></p>
-                <ul class="soc">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="cards-block">
-        <div class="container">
-            <div class="item">
-                <div class="item-top">
-                    <div class="ico">
-                        <img src="images/card-img1.jpg" alt="">
-                    </div>
-                    <p>0.6 <sup>%</sup></p>
-                    <span>ежедневно</span>
-                </div>
-                <div class="days">на 15 дней</div>
-                <div class="desc">
-                    <table>
-                        <tr>
-                            <td>мин. депозит</td>
-                            <td>макс. депозит</td>
-                        </tr>
-                        <tr>
-                            <td>$25</td>
-                            <td>не ограничен</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">начисления в рабочие дни</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">возврат тела в конце срока</td>
-                        </tr>
-                    </table>
-                </div>
-                <a href="#" class="item-btn">калькулятор прибыли</a>
-            </div>
-            <div class="item">
-                <div class="item-top">
-                    <div class="ico">
-                        <img src="images/card-img2.jpg" alt="">
-                    </div>
-                    <p>0.6 <sup>%</sup></p>
-                    <span>ежедневно</span>
-                </div>
-                <div class="days">на 15 дней</div>
-                <div class="desc">
-                    <table>
-                        <tr>
-                            <td>мин. депозит</td>
-                            <td>макс. депозит</td>
-                        </tr>
-                        <tr>
-                            <td>$25</td>
-                            <td>не ограничен</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">начисления в рабочие дни</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">возврат тела в конце срока</td>
-                        </tr>
-                    </table>
-                </div>
-                <a href="#" class="item-btn">калькулятор прибыли</a>
-            </div>
-            <div class="item">
-                <div class="item-top">
-                    <div class="ico">
-                        <img src="images/card-img3.jpg" alt="">
-                    </div>
-                    <p>0.6 <sup>%</sup></p>
-                    <span>ежедневно</span>
-                </div>
-                <div class="days">на 15 дней</div>
-                <div class="desc">
-                    <table>
-                        <tr>
-                            <td>мин. депозит</td>
-                            <td>макс. депозит</td>
-                        </tr>
-                        <tr>
-                            <td>$25</td>
-                            <td>не ограничен</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">начисления в рабочие дни</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">возврат тела в конце срока</td>
-                        </tr>
-                    </table>
-                </div>
-                <a href="#" class="item-btn">калькулятор прибыли</a>
-            </div>
-            <div class="item">
-                <div class="item-top">
-                    <div class="ico">
-                        <img src="images/card-img4.jpg" alt="">
-                    </div>
-                    <p>0.6 <sup>%</sup></p>
-                    <span>ежедневно</span>
-                </div>
-                <div class="days">на 15 дней</div>
-                <div class="desc">
-                    <table>
-                        <tr>
-                            <td>мин. депозит</td>
-                            <td>макс. депозит</td>
-                        </tr>
-                        <tr>
-                            <td>$25</td>
-                            <td>не ограничен</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">начисления в рабочие дни</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">возврат тела в конце срока</td>
-                        </tr>
-                    </table>
-                </div>
-                <a href="#" class="item-btn">калькулятор прибыли</a>
-            </div>
-            <div class="item">
-                <div class="item-top">
-                    <div class="ico">
-                        <img src="images/card-img5.jpg" alt="">
-                    </div>
-                    <p>0.6 <sup>%</sup></p>
-                    <span>ежедневно</span>
-                </div>
-                <div class="days">на 15 дней</div>
-                <div class="desc">
-                    <table>
-                        <tr>
-                            <td>мин. депозит</td>
-                            <td>макс. депозит</td>
-                        </tr>
-                        <tr>
-                            <td>$25</td>
-                            <td>не ограничен</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">начисления в рабочие дни</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">возврат тела в конце срока</td>
-                        </tr>
-                    </table>
-                </div>
-                <a href="#" class="item-btn">калькулятор прибыли</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="about-block">
-        <div class="container">
-            <div class="text">
-                <h2>о компании ecos energy ltd</h2>
-                <p>Цели были самой первой программой взаимного финансирования, которую предложила своим участникам СуперКопилка. И до сих пор Цели остаются самой популярной программой в Сообществе.</p>
-                <p>Она лучше всего подойдет тем, кто не имеет возможности откладывать сразу много денег, поскольку взносы по Целям делаются небольшими суммами один раз в неделю на протяжении всего срока работы программы. Этот срок участник определяет самостоятельно. Доходность Цели зависит от того сколько недель она будет находиться в работе, поскольку процентная ставка каждой последующей недели больше предыдущей.</p>
-                <p>Она лучше всего подойдет тем, кто не имеет возможности откладывать сразу много денег, поскольку взносы по Целям делаются небольшими суммами один раз в неделю на протяжении всего срока работы программы. Этот срок участник определяет самостоятельно. Доходность Цели зависит от того сколько недель она будет находиться в работе, поскольку процентная ставка каждой последующей недели больше предыдущей.</p>
-            </div>
-            <div class="image">
-                <img src="images/about-img.jpg" alt="">
+                <h2><span>О компании</span></h2>
+                <p>ComFur - молодая, развивающаяся компания использует креативный подход к решениям задач, связанных с разработкой дизайн-проектов, а также производством мебели для Вашего бизнеса.
+                    Наши специалисты помогут подобрать максимально подходящий и оптимальный вариант, спроектируют дизайн и просчитают стоимость вашей будущей мебели. В производстве, мы используем только качественные материалы и фурнитуру. </p>
+                <p>Мы дорожим отношением каждого нашего клиента и партнера, открыты к  сотрудничеству.<br/>
+                    Будем рады сотрудничеству с Вами!
+                </p>
             </div>
 
-            <a href="#" class="learn-more">Узнать больше</a>
-        </div>
-    </div>
-
-    <div class="video-block">
-        <div class="container">
-            <div class="video block">
-                <h3>Промо ролик от ecos Energy ltd</h3>
-                <img src="images/video-img.jpg" alt="">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zvWSlBDX2O4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Лучше всего подойдет тем, кто не имеет возможности откладывать сразу много денег, поскольку взносы по Целям делаются небольшими суммами один раз в неделю на протяжении всего срока работы программы. Этот срок участник определяет самостоятельно.</p>
-            </div>
-
-            <div class="certificate block">
-                <h3>мы официальная компания</h3>
-                <div class="certificate-wrap">
-                    <div class="image">
-                        <img src="images/certificate.jpg" alt="">
-                    </div>
-
-                    <div class="desc">
-                        <div class="text">
-                            <p>Название: <span>Ecos energy ltd</span></p>
-                            <p>Номер регистрации: <span>23145334</span></p>
-                            <p>Адрес:  <span>12 Clanricarde Gardens, London, England, W2 4NA</span></p>
-                            <p>номер: <span>+476-22-33</span></p>
-                            <p>E-mail: <span>support@ecos-energy.cc</span></p>
-                        </div>
-
-                        <div class="btn-block">
-                            <a href="#" class="btn yellow">Документация компании</a>
-                            <a href="#" class="btn green">проверить компанию</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="partners-block">
-        <div class="container">
-            <div class="partners">
-                <div class="desc">
-                    <h2>партнерская программа от ecos energy ltd</h2>
-
+            <div class="info-block">
+                <div class="wrap">
                     <div class="item">
-                        <div class="percent">
-                            <p>5%</p>
-                        </div>
-
-                        <div class="text">
-                            <p class="title">первый уровень</p>
-                            <p><span>от прибыли вашего реферала</span></p>
-                        </div>
+                        <p>600</p>
+                        <span>Проектов</span>
                     </div>
-
-                    <div class="item green">
-                        <div class="percent">
-                            <p>2%</p>
-                        </div>
-
-                        <div class="text">
-                            <p class="title">Второй уровень</p>
-                            <p><span>от прибыли вашего реферала</span></p>
-                        </div>
+                    <div class="item">
+                        <p>100</p>
+                        <span>Подрядчиков</span>
                     </div>
                 </div>
-
-                <div class="image">
-                    <img src="images/partners-img.png" alt="">
+                <div class="wrap">
+                    <div class="item">
+                        <p>60</p>
+                        <span>Партнеров</span>
+                    </div>
+                    <div class="item">
+                        <p>800</p>
+                        <span>Публикаций</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="benefits-block">
-        <div class="container">
-            <div class="left-block">
-                <h2>Преимущества работы з нами</h2>
-                <ul>
-                    <li>Надежная защита ваших депозитов </li>
-                    <li>Ручные выплаты в течении 24 часов</li>
-                    <li>Перспектива развития отрасли енергии</li>
-                    <li>Начисление прибыли ежедневно</li>
-                </ul>
-            </div>
+    <div id="services">
+        <div class="block services-block">
+            <h2>УСЛУГИ И ЦЕНЫ</h2>
 
-            <div class="right-block">
-                <div class="graph"><img src="images/pie-img.png" alt=""></div>
-                <h3>Cтатистика компании</h3>
-                <ul>
-                    <li>
-                        <p>Инвестировано</p>
-                        <p class="price">$18586.87</p>
-                    </li>
-                    <li>
-                        <p>выплаченая прибыль</p>
-                        <p class="price">$13565.22</p>
-                    </li>
-                    <li>
-                        <p>Всего инвесторов</p>
-                        <p class="price">2375 чел.</p>
-                    </li>
-                    <li>
-                        <p>Страховой фонд</p>
-                        <p class="price">$5565.22</p>
-                    </li>
-                </ul>
+            <div class="services-wrap">
+                <div class="item">
+                    <p class="title">разработка/проектирование <span>от $400</span></p>
+                    <p>Компания ComFur готова предоставить услуги по разработке дизайн-проектов мебельной продукции для Вас, учитывая все Ваши предпочтения в выборе цветовой гаммы, форм и размеров, а также целей данной продукции. После обсуждения деталей, мы составим цифровую 3D модель, это поможет Вам увидеть изделие в полной мере, подчеркнуть преимущества и убрать недостатки еще на этапе проектирования.</p>
+                </div>
+                <div class="item">
+                    <p class="title">монтаж</p>
+                    <p>Мы осуществляем доставку и монтаж нашей продукции по всей Украине. Наши специалисты сделают это в удобное для Вас время и в кратчайшие сроки.</p>
+                </div>
+                <div class="item">
+                    <p class="title">изготовление</p>
+                    <p>Наша команда воплотит в жизнь выбранное Вами изделие, учитывая все Ваши требования. Опытные специалисты и выбор качественной фурнитуры помогут мебельной продукции прослужить Вам долгие года.</p>
+                </div>
+                <div class="item">
+                    <p class="title">сервисное обслуживание</p>
+                    <p>Наша компания осуществляет сервисное обслуживание разработанной и произведенной нами продукции. В случае неполадок, наши специалисты приедут к Вам для устранения всех неисправностей.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="payment-block">
-        <div class="container">
-            <img src="images/payments.png" alt="">
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/footer-logo.png" alt="">
-                </a>
+    <footer id="footer">
+        <div class="block footer-block">
+            <div class="create">
+                <h2>Создать проект <img src="images/create-arrows.svg" alt=""></h2>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Партнерам</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Правила</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-
-                <p class="copy">Copyright © 2019-2020 Ecos-Energy.cc All rights reserved.</p>
+            <div class="footer">
+                <div class="footer-info">
+                    <p class="title">СВЯЖИСЬ С НАМИ</p>
+                    <ul>
+                        <li><a href="tel: +380666971008">+380666971008</a></li>
+                        <li><a href="mailto: gmail">gmail</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p class="title">СОЦСЕТИ</p>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p class="title">Адресс</p>
+                    <ul>
+                        <li>График работы</li>
+                        <li><span>пн - сб</span> <span>9-00</span> <span>18-00</span></li>
+                    </ul>
+                </div>
             </div>
+
+            <p class="copy">Все права защищены</p>
         </div>
     </footer>
 
 </div>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
