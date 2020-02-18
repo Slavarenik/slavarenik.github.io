@@ -23,10 +23,47 @@ $(document).ready(() => {
         xp += ((mousePos.x - xp - 15)/6);
         yp += ((mousePos.y - yp- 15)/6);
 
-        console.log(xp)
-
         $(".cursor").css({left: xp +'px', top: yp +'px'});
     }, 20)
+
+    $( "#slider" ).slider({
+        range: true,
+        min: 0,
+        max: 24,
+        values: [ 0, 24 ],
+        slide: function( event, ui ) {
+            $( "#amount" ).val(ui.values[ 0 ] + ' : 00' + ' - ' + ui.values[ 1 ] + ' : 00');
+        }
+    })
+
+    $( "#amount" ).val($( "#slider" ).slider( "values", 0 ) + ' : 00' +" - " + $( "#slider" ).slider( "values", 1 ) + ' : 00' );
+
+    $('.radio-wrap label').on('click', function() {
+        $('.radio-wrap label').removeClass('active')
+        $(this).addClass('active')
+    })
+
+    $('.form-wrapper .close').on('click', function(){
+        $('.form-wrapper').removeClass('active')
+    })
+
+    $('.callback').on('click', function(){
+        $('.form-wrapper').addClass('active')
+    })
+
+    setTimeout(() => {
+        $('.loading-screen').fadeOut(300)
+    }, 6000)
+
+    $('.menu-toggle, .main-menu ul li').on('click', function(){
+        $('.main-menu').toggleClass('active')
+    })
+})
+
+$(window).on('scroll', function () {
+    console.log($(document).scrollTop());
+
+    $('.callback').css('transform', 'rotate(-' + $(document).scrollTop()/10 +'deg)');
 })
 
 sliderOver = (slide) => {

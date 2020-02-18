@@ -11,17 +11,35 @@
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 <body>
 
+<div class="loading-screen">
+    <img src="images/loading-screent-logo.svg" alt="">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
 <div class="main">
+
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
 
     <div class="cursor"></div>
     <div class="cursor-point"></div>
+
+    <div class="callback">
+        <img src="images/form.svg" alt="">
+    </div>
 
     <!--  Main menu  -->
     <div class="main-menu">
@@ -171,6 +189,37 @@
         </div>
     </footer>
 
+</div>
+
+<!-- FORM -->
+<div class="form-wrapper">
+    <div class="close"><i class="fas fa-times"></i></div>
+
+    <div class="form">
+        <form action="">
+            <p class="title">КАК С ВАМИ СВЯЗАТСЯ</p>
+            <input type="text" name="name" placeholder="Как Вас зовут ?" autocomplete="off">
+            <p>Удобный время и способ связи для вас?</p>
+            <div class="radio-wrap">
+                <label class="active">
+                    <input type="radio" name="call-radio">
+                    <span>Почта</span>
+                </label>
+                <label>
+                    <input type="radio" name="call-radio">
+                    <span>Телефон</span>
+                </label>
+                <label>
+                    <input type="radio" name="call-radio">
+                    <span>Другое</span>
+                </label>
+            </div>
+            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            <div id="slider"></div>
+            <input type="text" name="call-method" placeholder="Email" autocomplete="off">
+            <button>ОТПРАВИТЬ</button>
+        </form>
+    </div>
 </div>
 
 <script src="js/main.js"></script>
