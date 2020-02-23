@@ -1,4 +1,5 @@
 $(document).ready(() => {
+
     const slide = $('.portfolio-block .item')
     const cursor = $('.cursor-point')
     let mousePos = {
@@ -47,7 +48,7 @@ $(document).ready(() => {
         $('.form-wrapper').removeClass('active')
     })
 
-    $('.callback').on('click', function(){
+    $('.callback, .create h2').on('click', function(){
         $('.form-wrapper').addClass('active')
     })
 
@@ -61,8 +62,6 @@ $(document).ready(() => {
 })
 
 $(window).on('scroll', function () {
-    console.log($(document).scrollTop());
-
     $('.callback').css('transform', 'rotate(-' + $(document).scrollTop()/10 +'deg)');
 })
 

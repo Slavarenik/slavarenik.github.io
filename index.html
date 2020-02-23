@@ -7,16 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comfur</title>
 
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -66,8 +67,13 @@
 
     <div id="portfolio">
         <div class="block portfolio-block">
-            <div class="item active">
+            <div class="item active" id="trade">
                 <img src="images/portfolio-img.jpg" alt="">
+
+                <a href="images/portfolio-img.jpg" data-lightbox="trade" class="gallery-link"></a>
+                <a href="images/portfolio-img.jpg" data-lightbox="trade"></a>
+                <a href="images/portfolio-img2.jpg" data-lightbox="trade"></a>
+                <a href="images/portfolio-img.jpg" data-lightbox="trade"></a>
 
                 <div class="desc">
                     <p class="title">Торговые островки, витрины</p>
@@ -77,6 +83,11 @@
             <div class="item">
                 <img src="images/portfolio-img2.jpg" alt="">
 
+                <a href="images/portfolio-img.jpg" data-lightbox="stends" class="gallery-link"></a>
+                <a href="images/portfolio-img.jpg" data-lightbox="stends"></a>
+                <a href="images/portfolio-img2.jpg" data-lightbox="stends"></a>
+                <a href="images/portfolio-img.jpg" data-lightbox="stends"></a>
+
                 <div class="desc">
                     <p class="title">Торгово-выставочное оборудование,<br/> презентационные стенды</p>
                     <p class="text">Модуль, который имеет в своем составе витрину и прилавок. Такой островок может быть установлен в любом месте, благодаря своей компактности. По сути, это отдельные торговые точки, располагающиеся на территории больших торговых центров, супермаркетов, развлекательных центров. Такие островки являются очень эффективным видом розничной торговли.</p>
@@ -84,6 +95,11 @@
             </div>
             <div class="item">
                 <img src="images/portfolio-img3.jpg" alt="">
+
+                <a href="images/portfolio-img.jpg" data-lightbox="ofice" class="gallery-link"></a>
+                <a href="images/portfolio-img.jpg" data-lightbox="ofice"></a>
+                <a href="images/portfolio-img2.jpg" data-lightbox="ofice"></a>
+                <a href="images/portfolio-img.jpg" data-lightbox="ofice"></a>
 
                 <div class="desc">
                     <p class="title">Офисная и коммерческая мебельная<br/> продукция</p>
@@ -139,15 +155,15 @@
                     <p>Компания ComFur готова предоставить услуги по разработке дизайн-проектов мебельной продукции для Вас, учитывая все Ваши предпочтения в выборе цветовой гаммы, форм и размеров, а также целей данной продукции. После обсуждения деталей, мы составим цифровую 3D модель, это поможет Вам увидеть изделие в полной мере, подчеркнуть преимущества и убрать недостатки еще на этапе проектирования.</p>
                 </div>
                 <div class="item">
-                    <p class="title">монтаж</p>
+                    <p class="title test2">монтаж <span>от $400</span></p>
                     <p>Мы осуществляем доставку и монтаж нашей продукции по всей Украине. Наши специалисты сделают это в удобное для Вас время и в кратчайшие сроки.</p>
                 </div>
                 <div class="item">
-                    <p class="title">изготовление</p>
-                    <p>Наша команда воплотит в жизнь выбранное Вами изделие, учитывая все Ваши требования. Опытные специалисты и выбор качественной фурнитуры помогут мебельной продукции прослужить Вам долгие года.</p>
+                    <p class="title">изготовление <span>от $400</span></p>
+                    <p>Наша команда воплотит в жизнь выбранное Вами изделие, учитывая все Ваши требования. Опытные специалисты и выбор качественной фурнитуры помогут мебельной продукции прослужить Вам долгие годы.</p>
                 </div>
                 <div class="item">
-                    <p class="title">сервисное обслуживание</p>
+                    <p class="title test2">сервисное обслуживание <span>от $400</span></p>
                     <p>Наша компания осуществляет сервисное обслуживание разработанной и произведенной нами продукции. В случае неполадок, наши специалисты приедут к Вам для устранения всех неисправностей.</p>
                 </div>
             </div>
@@ -222,7 +238,7 @@
     </div>
 </div>
 
-<script src="js/main.js"></script>
+
 
 </body>
 </html>
